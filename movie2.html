@@ -29,7 +29,18 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       margin: auto;
 	  height:300px;
   }
-
+    .drop{
+	color:#9d9d9d;
+	background-color: #222;
+    border-color: #222;
+    margin: 10px;
+	
+	}
+	
+	.drop:hover
+{
+color:white;
+}
 </style>
 </head>
 <body>
@@ -43,8 +54,18 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   <div class="container-fluid">    
     <ul class="nav navbar-nav">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Career</a></li>
-      <li><a href="#">Contact</a></li> 
+      <li><a href="#">News</a></li>
+      <li>  
+	<div class="dropdown">
+    <button class="btn  dropdown-toggle drop" type="button" data-toggle="dropdown">Career
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Admin</a></li>
+      <li><a href="#">Technical</a></li>
+
+    </ul>
+  </div>
+  </li> 
     </ul>
          </div>
 </nav>
@@ -115,7 +136,7 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   </div>
 
   <div class="row" >
-  <div class="col-xs-12 col-sm-12 col-md-4"><img src="D:/workspace/sprint1b/battleship_ver12.jpg"  style="width:600;height:600;"></div>
+  <div class="col-xs-12 col-sm-12 col-md-4"><img src="D:/workspace/sprint1b/battleship_ver12.jpg"  style="width:600;height:300;"></div>
   <div class="col-xs-12 col-sm-12 col-md-4"><center><h1>BATTLESHIP</h1><h3>Rating</h3><img src="D:/workspace/sprint1b/4-stars.jpg" 
 style="width:100px;height:200;"><div>
   <br>
