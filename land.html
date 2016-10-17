@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<form action="">
-<center><br>
-Card Holder Name*:<br><br>
-<input type="text" name="name" pattern="[A-Za-z]{1,}" required>
-<br><br>
-Card Name*:<br><br>
-<input type="text" name="cardname" pattern="[A-Za-z]{1,}" required>
-<br><br>
-Card Number*:<br><br>
-<input type="text" name="cardnumber" pattern="[0-9]{1,}"  oninvalid="this.setCustomValidity('Only Numbers allowed')" required>
-<br><br>
-Amount*:<br><br>
-<input type="text" name="amount" pattern="[0-9.]{1,}" required>
-<br>
-<br>
- <input type="submit" value="PayNow">
- </center>
-</form>
+    <form action="">
+        <center><br> Card Holder Name*:<br><br>
+            <input type="text" name="name" pattern="[A-Za-z]{1,}" required>
+            <br><br> Card Name*:<br><br>
+            <input type="text" name="cardname" pattern="[A-Za-z]{1,}" required>
+            <br><br> Card Number*:<br><br>
+            <input type="text" name="cardnumber" pattern="[0-9]{1,}" oninvalid="this.setCustomValidity('Only Numbers allowed')" required>
+            <br><br> Amount*:
+            <br><br>
+            <input type="text" name="amount" pattern="[0-9.]{1,}" required>
+            <br>
+            <br>
+            <input type="submit" value="PayNow">
+        </center>
+    </form>
 
 </body>
-</html>
 
+</html>
