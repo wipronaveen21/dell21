@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the array values after the split.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var arrays = [5, [22], [[14]], [[4]],[5,6]];
+var merged = [].concat.apply([], arrays);
+
+document.write(arrays.length);
+document.write(merged.length);
+
+</script>
+
+</body>
+</html>
+

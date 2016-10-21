@@ -1,0 +1,23 @@
+
+
+<html>
+
+<script type="text/javascript" language="javascript">
+
+document.write("<center>"); //write a center tag to make sure the pyramid displays correctly(try it without this step to see what happens)
+for(var i = 0; i <= 10; i++) //a loop, this counts from 0 to 10 (how many rows of stars)
+{
+	for(var x = 0; x <= i; x++)// a loop, counting from 0 to whatever value i is currently on
+	{
+		document.write("*");//write a * character
+	}
+	document.write("<br/>"); //write a br tag, meaning new line, after every star in the row has been created
+}
+document.write("</center>"); //close the center tag, opened at the beginning
+
+</script>
+
+<body>
+<p id="result"></p>
+</body>
+</html>
