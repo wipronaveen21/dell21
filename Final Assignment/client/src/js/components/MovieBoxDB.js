@@ -1,7 +1,10 @@
 var React= require('react');
 var MovieBoxDB = React.createClass({
 getInitialState:function(){
-  return ({text:""});
+  return {
+      text:"",
+      modid:"#"+this.props.Array.imdbID
+    };
 },
   updateDB: function(id,title)
   {
@@ -59,13 +62,13 @@ this.updateDB(id,title);
      <h3>{this.props.Array.Title}</h3>
      <h3>{this.props.Array.Year}</h3>
      <h3>{this.props.Array.Type}</h3>
-     <p><button className="btn btn-primary" data-toggle="modal" data-target="#myModal">Update </button><span>&nbsp;&emsp;</span>
+     <p><button className="btn btn-primary" data-toggle="modal" data-target={this.state.modid}>Update </button><span>&nbsp;&emsp;</span>
         <button  className="btn btn-warning" onClick={this.deleteDB.bind(null,this.props.Array.imdbID)} >Delete</button></p>
      </div>
      </div>
 
 
-     <div id="myModal" className="modal fade" role="dialog">
+     <div id={this.props.Array.imdbID} className="modal fade" role="dialog">
  <div className="modal-dialog">
    <div className="modal-content">
      <div className="modal-header">
@@ -81,7 +84,7 @@ this.updateDB(id,title);
      </div>
  </div>
  <div className="col-xs-12">
- <center><button type="button" className="btn btn-primary " onClick={this.clickHandler.bind(null,this.props.Array.imdbID,this.props.Array.Title)} >Update Movie Name</button></center>
+ <center><button type="button" className="btn btn-primary " onClick={this.clickHandler.bind(null,this.props.Array.imdbID,this.props.Array.Title)} data-dismiss="modal" >Update Movie Name</button></center>
 </div>
 </form>
      </div>
