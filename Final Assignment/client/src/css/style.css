@@ -1,0 +1,14 @@
+#right{
+	float: right;
+	color: blue;
+
+}
+#left{
+		display: inline;
+	padding-left: 100px;
+	float: left;
+}
+
+#imgheight{
+  height: 300px;
+}
